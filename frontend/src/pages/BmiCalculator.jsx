@@ -3,10 +3,29 @@ import api from '../utils/api';
 
 const BmiCalculator = () => {
   const [height, setHeight] = useState('');
+  const [feet, setFeet] = useState('');
+  const [inches, setInches] = useState('');
   const [weight, setWeight] = useState('');
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+
+  const handleImperialChange = (f, i) => {
+    setFeet(f);
+    setInches(i);
+    setError('');
+    
+    const ftVal = f ? Number(f) : 0;
+    const inVal = i ? Number(i) : 0;
+    
+    if (ftVal > 0 || inVal > 0) {
+      const totalInches = (ftVal * 12) + inVal;
+      const cmVal = Math.round(totalInches * 2.54);
+      setHeight(cmVal.toString());
+    } else {
+      setHeight('');
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -90,14 +109,42 @@ const BmiCalculator = () => {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="bmi-height" className="block text-sm font-medium text-gray-700 mb-1">
-                Height (cm) <span className="text-red-400">*</span>
-              </label>
+              <div className="flex justify-between items-center mb-1">
+                <label htmlFor="bmi-height" className="block text-sm font-medium text-gray-700">
+                  Height (cm) <span className="text-red-400">*</span>
+                </label>
+                <div className="flex items-center space-x-2 text-sm">
+                  <span className="text-gray-500 text-xs">Or convert from:</span>
+                  <input
+                    type="number"
+                    placeholder="ft"
+                    value={feet}
+                    min="0"
+                    max="10"
+                    onChange={(e) => handleImperialChange(e.target.value, inches)}
+                    className="w-14 px-2 py-1 border border-gray-300 rounded text-center focus:outline-none focus:ring-1 focus:ring-primary-500"
+                  />
+                  <input
+                    type="number"
+                    placeholder="in"
+                    value={inches}
+                    min="0"
+                    max="11"
+                    onChange={(e) => handleImperialChange(feet, e.target.value)}
+                    className="w-14 px-2 py-1 border border-gray-300 rounded text-center focus:outline-none focus:ring-1 focus:ring-primary-500"
+                  />
+                </div>
+              </div>
               <input
                 id="bmi-height"
                 type="number"
                 value={height}
-                onChange={(e) => { setHeight(e.target.value); setError(''); }}
+                onChange={(e) => { 
+                  setHeight(e.target.value); 
+                  setError(''); 
+                  setFeet('');
+                  setInches('');
+                }}
                 min="50"
                 max="300"
                 className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"

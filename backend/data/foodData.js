@@ -71,6 +71,35 @@ const foodData = [
   { name: 'cola', caloriesPer100g: 42, protein: 0, carbs: 11, fat: 0, fiber: 0, category: 'beverage' },
   { name: 'green tea', caloriesPer100g: 1, protein: 0, carbs: 0, fat: 0, fiber: 0, category: 'beverage' },
   { name: 'coffee black', caloriesPer100g: 2, protein: 0.1, carbs: 0, fat: 0, fiber: 0, category: 'beverage' },
+
+  // ---- Indian Staples ----
+  { name: 'roti / chapati', caloriesPer100g: 297, protein: 9, carbs: 46, fat: 10, fiber: 9.7, category: 'grain' },
+  { name: 'dal tadka (cooked)', caloriesPer100g: 116, protein: 9, carbs: 20, fat: 0.4, fiber: 7.9, category: 'protein' },
+  { name: 'idli', caloriesPer100g: 100, protein: 3, carbs: 21, fat: 0.4, fiber: 1.5, category: 'grain' },
+  { name: 'dosa (plain)', caloriesPer100g: 168, protein: 3.9, carbs: 29, fat: 3.7, fiber: 0.9, category: 'grain' },
+  { name: 'paratha (plain)', caloriesPer100g: 326, protein: 8, carbs: 49, fat: 12, fiber: 4.8, category: 'grain' },
+
+  // ---- Fast Food / Packaged ----
+  { name: 'pizza (cheese)', caloriesPer100g: 266, protein: 11, carbs: 33, fat: 10, fiber: 2.3, category: 'fast_food' },
+  { name: 'hamburger', caloriesPer100g: 295, protein: 14, carbs: 24, fat: 14, fiber: 1.1, category: 'fast_food' },
+  { name: 'french fries', caloriesPer100g: 312, protein: 3.4, carbs: 41, fat: 15, fiber: 3.8, category: 'fast_food' },
+  { name: 'instant noodles', caloriesPer100g: 385, protein: 8, carbs: 55, fat: 15, fiber: 2, category: 'fast_food' },
+
+  // ---- Seeds & Dry Fruit ----
+  { name: 'chia seeds', caloriesPer100g: 486, protein: 17, carbs: 42, fat: 31, fiber: 34, category: 'snack' },
+  { name: 'walnuts', caloriesPer100g: 654, protein: 15, carbs: 14, fat: 65, fiber: 6.7, category: 'snack' },
+  { name: 'raisins', caloriesPer100g: 299, protein: 3.1, carbs: 79, fat: 0.5, fiber: 3.7, category: 'snack' },
+  { name: 'dates', caloriesPer100g: 282, protein: 2.5, carbs: 75, fat: 0.4, fiber: 8, category: 'snack' },
+
+  // ---- Oils & Cooking Essentials ----
+  { name: 'olive oil', caloriesPer100g: 884, protein: 0, carbs: 0, fat: 100, fiber: 0, category: 'oil' },
+  { name: 'ghee', caloriesPer100g: 900, protein: 0, carbs: 0, fat: 100, fiber: 0, category: 'oil' },
+  { name: 'coconut oil', caloriesPer100g: 862, protein: 0, carbs: 0, fat: 100, fiber: 0, category: 'oil' },
+
+  // ---- Breakfast Foods ----
+  { name: 'corn flakes', caloriesPer100g: 357, protein: 8, carbs: 84, fat: 0.4, fiber: 1.2, category: 'breakfast' },
+  { name: 'pancakes', caloriesPer100g: 227, protein: 6, carbs: 28, fat: 10, fiber: 0, category: 'breakfast' },
+  { name: 'muesli', caloriesPer100g: 370, protein: 11, carbs: 65, fat: 6, fiber: 8, category: 'breakfast' }
 ];
 
 export default foodData;
