@@ -138,3 +138,9 @@ Go to `http://localhost:3000` to use the application.
 | MONGO_URI  | MongoDB connection string          |
 | JWT_SECRET | Secret key for signing JWT tokens  |
 | PORT       | Server port (default: 5000)        |
+
+---
+
+&copy; 2026 Deepak. All rights reserved.  
+This project "CaloryInsight" is submitted for copyright registration.  
+Unauthorized use is prohibited.

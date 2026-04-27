@@ -35,7 +35,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-[#dce3ca] mt-6 pt-4 text-center text-sm text-gray-600">
-          <p>&copy; {currentYear} CaloryInsight. All rights reserved.</p>
+          <p>&copy; {currentYear} Deepak. All rights reserved.</p>
+          <p className="mt-1 text-xs">This project "CaloryInsight" is submitted for copyright registration.</p>
+          <p className="text-xs">Unauthorized use is prohibited.</p>
         </div>
       </div>
     </footer>
