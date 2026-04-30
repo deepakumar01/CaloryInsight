@@ -5,6 +5,7 @@ import connectDB from './config/db.js';
 import errorHandler from './middleware/errorHandler.js';
 import dns from 'dns';
 
+
 //Change DNS
 dns.setServers(['1.1.1.1', '8.8.8.8']);
 
