@@ -137,6 +137,7 @@ Go to `http://localhost:3000` to use the application.
 | GET    | /api/calc/history      | Get user's history        |
 
 ### User (Protected)
+
 | Method | Endpoint            | Description        |
 |--------|---------------------|--------------------|
 | GET    | /api/user/profile   | Get user profile   |
