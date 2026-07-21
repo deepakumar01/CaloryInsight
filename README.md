@@ -39,7 +39,8 @@ A full-stack health and fitness web application built with the MERN stack (Mongo
 | Backend   | Node.js, Express.js                 |
 | Database  | MongoDB, Mongoose                   |
 | Auth      | JWT (jsonwebtoken), bcryptjs        |
-| Tooling   | Vite, PostCSS, Autoprefixer         |
+| Tooling   | Vite, PostCSS, Autoprefixer    
+|
 
 ## Folder Structure
 ```
