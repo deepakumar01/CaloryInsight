@@ -147,6 +147,7 @@ Go to `http://localhost:3000` to use the application.
 
 ## Environment Variables
 
+
 | Variable   | Description                        |
 |------------|------------------------------------|
 | MONGO_URI  | MongoDB connection string          |
