@@ -154,6 +154,7 @@ Go to `http://localhost:3000` to use the application.
 | JWT_SECRET | Secret key for signing JWT tokens  |
 | PORT       | Server port (default: 5000)        |
 
+
 ---
 
 &copy; 2026 Deepak. All rights reserved.  
