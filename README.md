@@ -1,5 +1,6 @@
 # CaloryInsight
 
+
 A full-stack health and fitness web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). Track your calorie burns, calculate BMI, and discover nutrition facts for everyday foods.
 
 ## Features
