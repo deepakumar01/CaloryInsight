@@ -4,7 +4,6 @@ A full-stack health and fitness web application built with the MERN stack (Mongo
 
 ## Features
 
-
 - **User Authentication** — Register and login with JWT-based authentication. Passwords are hashed with bcrypt.
 - **Calorie Burn Calculator** — Estimate calories burned during 10 different exercise types using the MET formula.
 - **BMI Calculator** — Calculate your Body Mass Index and see which WHO category you fall into.
